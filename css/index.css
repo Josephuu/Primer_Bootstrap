@@ -1,0 +1,58 @@
+.btn-platzi{
+    background-color:#97c93e;
+    color: white;
+}
+.btn-platzi:hover{
+    background-color:  #7ea836;
+}
+.text-platzi{
+    color: #97c93e !important;
+}
+#footer{
+    background-color: #273b47;
+    height: auto;
+    text-align: center;
+}
+#footer a{
+    color: white;
+}
+
+#header img{
+    padding-right: 8px;
+    width: 100px;
+}
+
+#main .carousel-inner img{
+    max-height: 70vh;
+    /* Object fit es una propiedad que nos permite preservar la relacion de aspecto de la imagen, es util para 
+    mostrar de forma correcta (sin que se estire) una imagen */
+    object-fit: cover;
+    filter: grayscale(70%);
+}
+
+#carousel{
+    position: relative;   
+}
+#carousel .overlay{
+    /* Esta propiedad sirve para controlar el orden de los elementos, mientras mayor el valor, mayor la prioridad */
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0, 0.5);
+    color: white;
+}
+#carousel .overlay .container,.row{
+    /* Este paso es necesario para poder centrar correctamente el texto dentro del carousel */
+    height: 100%;
+}
+
+#place-time{
+    background-color: #343a40;
+    color: white;
+}
+#place-time img{
+    max-width: 100%;
+}
